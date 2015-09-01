@@ -1,0 +1,24 @@
+normalize.css stylesheet: eliminates cross-browser css differences. 
+
+Position: 
+Static - NOT positioned
+Relative, Fixed, Absolute - ARE positioned
+
+Relative position positions an element relative to where it WOULD be, if it were static.
+
+Fixed position -  positions an element relative to the window
+
+Absolute position - positions an element relative to its closest positioned ancestor.
+
+Display:
+Block - full page width, has dimensions
+
+Inline - smaller, has no dimensions. Neatly wraps their contents.
+
+Inline-block - sizeable like a block level element, can be placed in-line like an inline element
+
+Float - removes an element from the document flow, and moves it to the edge of the page, allowing text to flow around it.
+
+Clear - cleared elements will not share horizontal space with floated elements.
+
+Overflow
