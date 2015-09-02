@@ -1,0 +1,15 @@
+Hoziontal centering block elements
+margin: auto;
+
+Horizontal centering inline block element
+text-align: center; - on the PARENT
+Careful, text properties are inherited by all children
+
+
+
+
+Vertical centering
+
+set line-height on the parent equal to its height.
+set vertical-align:middle; on the child.
+Be careful of inherited properties.
