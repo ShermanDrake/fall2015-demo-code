@@ -1,0 +1,111 @@
+*{
+	box-sizing:border-box;
+}
+.btn {
+	display: inline-block;
+	padding: 20px;
+	margin: 5px;
+	opacity: 1;
+	transition: all 2s cubic-bezier(.25,.71,.39,.26);
+
+}
+
+.btn1{
+	padding: 20px;
+	background-color: pink;
+	color:white;
+	margin:5px;
+	display: inline-block;
+/*	position: fixed;
+
+	top:50px;
+	left:50px;*/
+}
+
+@keyframes pulse {
+	0%{background-color:green;}
+	50%{background-color: blue;}
+	100%{background-color: green}
+}
+
+.btn1:hover{
+	animation:pulse 1.5s infinite;
+}
+.btn2 {
+	padding: 20px;
+	background-color: papayawhip;
+	color:white;
+	margin:5px;
+	display: inline-block;
+	opacity: 0;
+	width:100px;
+	height:100px;
+}
+
+.portfolio-item:hover .front{
+
+}
+.fade-out{
+	transition: all 2s cubic-bezier(.25,.71,.39,.26);
+	opacity: 0;
+}
+
+@keyframes fadeOut {
+  0%   { 
+  	opacity: 1;
+  	width:200px;
+  	height:200px;
+  	/*transform: translateY(0deg);*/
+  }
+  75% {
+  	opacity: 0.25;
+  	background-color:peachpuff;
+  }
+  100% { 
+  	opacity: 0; 
+  	background-color: red;
+  	width:0px;
+  	height:0px;
+  	/*transform: translateY(360deg);*/
+
+  }
+}
+
+
+.btn2:hover {
+	animation: fadeOut 4s infinite;
+}
+
+
+
+.btn3 {
+	padding:20px;
+	background-color: pink;
+	color:white;
+	margin:5px;
+	display: inline-block;
+
+}
+
+
+
+
+.parent{
+	height:300px;
+	background-color: grey;
+	/*padding:100px;*/
+	/*display: flex;*/
+	line-height: 300px;
+	/*display: inline-block;*/
+
+}
+
+.child{
+	height:100px;
+	vertical-align: middle;
+	line-height: initial;
+	background-color: white;
+	display: inline-block;
+	width:100px;
+
+}
