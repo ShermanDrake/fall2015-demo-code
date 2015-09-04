@@ -1,3 +1,6 @@
+/*-----------------*/
+/*--Normalization--*/
+/*-----------------*/
 body{
 	margin:0;
 	padding:0;
@@ -5,16 +8,23 @@ body{
 * {
 	box-sizing:border-box;
 }
+
+
+/*---------------*/
+/*--Ems vs Rems--*/
+/*---------------*/
+/*Ems are relative font sizes compared to an element's parent*/
+/*Rems are relative font sizes compared to the BASE document font size (HTML element)*/
 /*html {
 	font-size: 24px;
 }
 
 .main-header{
-	font-size: 0.5rem;
+	font-size: 0.5em;
 }
 
 .sub-header {
-	font-size: 2rem;
+	font-size: 2em;
 }
 
 .on-fleek-header{
@@ -22,31 +32,24 @@ body{
 }
 */
 
+/*-----------*/
+/*--Columns--*/
+/*-----------*/
 .my-column-container{
 	overflow: hidden;
+	/*Adding overflow hidden to our column-containers allows us */
+	/*To prevent rows of columns from floating into one another*/
 }
 
-/*[class = 'col-1-2']{
-
-}
-*/
-
-/*[class *= 'button-']{
-
-}*/
-
-/*.button-default
-.button-info*/
-
+/*Wildcard class selector - will select anything starting with col- */
 [class *= 'col-'] {
 	width:100%;
 	float:left;
-	min-height: 1px;
+	min-height: 1px; /* So our columns will always have dimensions */
 	border:1px solid black;
 }
 
 .col-1-2{
-	display: inline-block;
 	background-color: firebrick;
 	font-size:60px;
 
@@ -62,17 +65,20 @@ body{
 	font-size:60px;
 
 }
-/*.col-2-3{
-	display: inline-block;
-	background-color: peru;
-	width:100%;
-	float:left;
-	font-size:60px;
 
-}*/
 
 /*@font-face{}
 @keyframes myAnimation {}*/
+
+
+/*-----------------*/
+/*--Media Queries--*/
+/*-----------------*/
+/*By placing media queries at the end of the css file*/
+/*We can take advantage of the cascade*/
+/*Media Queries do NOT add specificity to our selectors*/
+/*In order to keep our selectors consistant and not have to */
+/*write a second set, put media queries at the bottom!*/
 
 @media screen and (min-width:1024px){
 
@@ -86,9 +92,6 @@ body{
 	.col-2-3{
 		width:66.666%;
 	}
-	/*.column-2{
-		width: 50%;
-	}*/
 
 }
 
