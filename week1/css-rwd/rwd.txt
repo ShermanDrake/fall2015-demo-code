@@ -1,0 +1,27 @@
+Responsive Web Design
+
+* Wide range of devices, sizes, and capabilities
+* Network Speed / Performance
+* Data limits
+* Pixel Density
+
+mysite.com
+m.mysite.com
+
+----Mobile First----
+-Designing for phones / devices FIRST
+
+Progressive Enhancement vs Graceful Degradation
+
+*PE* - Designing for mobile first, adding layout / functionality
+     as screen size increases
+
+GD - Designing for desktop first, removing layout / functionality
+     as screen size decreases
+
+
+
+
+
+
+
