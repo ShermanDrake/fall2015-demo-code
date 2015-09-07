@@ -1,0 +1,47 @@
+In ENGLISH, we write SENTENCES, composed of WORDS, and each word has a TYPE, such as noun, verb, adjective, etc.
+
+in JAVASCRIPT, we write STATEMENTS, composed (mostly) of VALUES, and each value has a TYPE, such and number, string, etc.
+(we have clauses in english, which are like expressions in javascript)
+Every type has a LITERAL representation; the simplest, most straightforward way to represent that value. 
+
+
+javascript statements end with semicolons. BUT javascript uses a feature called ASI (automatic semicolon insertion)
+
+OPERATORS let you combine multile values to produce a new value
+
+PRIMITIVE types: 
+
+Numbers
+Binary Number operators: +, -, *, /, %
+
+
+FizzBuzz
+
+print the numbers from 1 to 15. If it's divisible by 3, also print 'Fizz', if it's divisible by 5, print 'Buzz', unless it's divisible by 3 AND 5, then print 'FizzBuzz'.
+
+
+Variable: a name that refers to a value.
+A variable is not a box that contains a value, it is a signpost that points to a value. Many signposts can be pointing to the exact same value.
+valid variable names: a variable name must start with a letter, _, or $, and can contain only letters, numbers, _, or $.
+valid: foo, bar2, __things, $$bills
+
+
+String: just a sequence of characters.
+
+string operators: + (concatenation, not addition)
+strings are ZERO-INDEXED: we start counting strings from 0, not from 1. 
+
+Property: some values have other values attached to them
+
+dot-notation is more convenient and easier to read, but can't always be used.
+
+bracket-notation MUST be used when the property name is not a valid variable, or it is not know in advance.
+
+Boolean operators
+! - unary operator: only needs one operand
+binary boolean operators:
+
+<, >, <=, >=, ==, ===, &&, ||
+
+
+PLEASE indent your code properly. Use either 2 or 4 spaces.
