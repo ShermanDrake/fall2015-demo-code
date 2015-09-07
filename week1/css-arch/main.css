@@ -1,0 +1,106 @@
+.button {
+	/*Base button layout*/
+	border-radius:10px;
+	border:none;
+	margin:5px;
+}
+
+.button-skin{
+	/*Default button looks*/
+	padding:10px 15px;
+	background-color: hotpink;
+	color:white;
+}
+
+.button-skin-important {
+	/*Important button looks*/
+	color:blue;
+	background-color: red;
+	padding:50px;
+}
+
+.green-shadow {
+	/*Utility Class - can be placed anywhere*/
+	box-shadow: 0px 0px 5px 5px lawngreen;
+	/*Be mindful of having TOO many utility classes*/
+	/*Don't need a class for each CSS property that exists!*/
+}
+
+
+
+/*This selector is very specific and tightly coupled to structure*/
+/*What is this h1 needs to change or move?  Our styles break down*/
+/*.profile .profile-info > h1 {
+	color:peachpuff;
+}*/
+
+
+/*.descendent - wil select ALL elements with the class descendent
+
+.parent .descendent - will select ALL descendent elements of .parent with the class descendent
+
+.parent.descendent - will select ALL elements with the parent AND descendent classes
+*/
+
+.profile-name {
+	color:peachpuff;
+}
+
+.big-T {
+	font-size: 200%;
+	font-family: 'GoodFont';
+	color:dodgerblue;
+}
+/*@font-face {
+	font-family: 'GoodFont';
+	src : url('someFont.woff');
+}
+*/
+/*.profile-name:after{
+	content : 'T';
+	font-size: 90px;
+}*/
+
+/*.profile-name:hover{
+	color:lawngreen;
+}*/
+
+.profile-input:focus{
+	background-color: peachpuff;
+}
+
+.profile-info *:hover{
+	color:lawngreen;
+}
+
+/*h1, h2, h3, h4, h5, h6 {
+	Multi selector
+}*/
+
+
+/*.profile.good-profile.my-profile*/
+
+/*#profile-contact{
+	/*ID's are too specific for styling*//*
+	/*Hard to override and only apply to a single element*//*
+
+	font-size: 40px;
+	color:indianred;
+}*/
+
+
+
+/*Specificity counting*/
+/*Count ID's, classes, and tags*/
+/*Any # of tags cannot override a class*/
+/*Any # of classes cannot override an ID*/
+
+
+/*#profile
+1,0,0
+.profile
+0,1,0
+.profile.profile.profile.profile.profile.profile.profile.profile.profile.profile.profile.profile
+0,200,0
+h1
+0,0,1*/
