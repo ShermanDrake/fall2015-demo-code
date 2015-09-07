@@ -78,23 +78,115 @@ false
 //     console.log("it's true!") 
 // }
 
-var canDrink
+// var canDrink
 
-var age = prompt("How old are you?") //takes user input, as a string.
-// console.log(typeof age) // it's a string!
-var country = 'mexico'
+// // var age = prompt("How old are you?") //takes user input, as a string.
+// // console.log(typeof age) // it's a string!
+// var country = 'mexico'
 
-if ( +age >= 21 ) {
-    canDrink = true
+// if ( +age >= 21 ) {
+//     canDrink = true
+// }
+// else if ( (( country === 'Mexico' ) || country === 'mexico') && ( +age >= 18 ) ) {
+//     canDrink = true
+// }
+// else {
+//     canDrink = false
+// }
+
+
+// console.log('Will you be served? ' + canDrink)
+
+// console.log( ( true + true + true ) * ( true + true ) * false) // booleans can coerce to 0 and 1
+
+
+// array literal
+var myArray = []
+// there are seven ELEMENTS in the days array.
+var days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
+
+
+// console.log(days.length)
+
+// console.log(days[0])
+
+
+var greeting = 'hello'
+greeting[0] = 'H' // this doesn't do anything, because strings are IMMUTABLE.
+
+days[0] = 'Mondaaaaaaaaaaayyyyyy..........'
+// console.log(days[0])
+
+
+days.push('RaphaelDay') // push adds this value to the end of the array
+// console.log(days)
+
+// var whatDidWeRemove = days.pop()
+// days.pop()
+// days.pop()
+// days.pop()
+// days.pop()
+// days.pop()
+// console.log(whatDidWeRemove)
+
+// console.log(days)
+
+var start = 0
+start++
+start = start + 1 // exactly the same as the above line
+start += 1 // also the same as the above line
+start *= 2 
+// console.log(start)
+
+// the variable i is an integer, NOT a string
+// for ( var i = 0; i < days.length; i++ ) {
+
+//     if ( days[i] === 'Saturday' ) {
+//         alert('Party!')
+//     }
+//     else if ( days[i] === 'Sunday' ) {
+//         alert('Take a nap...')
+//     }
+//     else {
+//         alert('work work work...')
+//     }
+
+// }
+
+
+var myObj = {}
+
+var topGun = {
+    rating : 6.8,
+    genre  : 'Historical autobiography',
+    title  : 'Top Gun',
+    year   : 1986,
 }
-else if ( (( country === 'Mexico' ) || country === 'mexico') && ( +age >= 18 ) ) {
-    canDrink = true
+
+
+// console.log(topGun['genre'])
+
+// for ( var key in topGun ) {
+//     console.log('The ' + key + ' of the movie is ' + topGun[key])
+// }
+
+// var which = prompt('Which property do you want to know about?')
+
+// console.log(topGun[which])
+
+var meanGirls = {
+    rating : 'fetch',
+    genre  : 'inspirational documentary',
+    year   : "he doesn't even go here.",
+    title  : "Mean Girls",
 }
-else {
-    canDrink = false
-}
 
+topGun.rating = 6.9
 
-console.log('Will you be served? ' + canDrink)
+// console.log(topGun)
 
-console.log( ( true + true + true ) * ( true + true ) * false) // booleans can coerce to 0 and 1
+var movies = []
+movies.push(topGun)
+movies.push(meanGirls)
+console.log(movies)
+

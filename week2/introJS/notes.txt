@@ -45,3 +45,32 @@ binary boolean operators:
 
 
 PLEASE indent your code properly. Use either 2 or 4 spaces.
+
+
+Arrays - non-primitive type
+
+stack: FILO - first in, last out.
+
+queue: FIFO - first in, first out.
+
+For loops:
+
+for loop declaration describes how to loop over the array, what we're looping over, etc.
+
+loop initializer: runs ONCE at the start of the for loop. 
+
+loop conditional runs before each loop, and if it is true, the loop body executes again.
+
+loop incrementer 
+
+for loop body describes what to do on each iteration.
+
+
+Objects - non-primitive type
+
+objects consist of unordered key-value pairs.
+
+Arrays have numbered indexes to store ordered values
+
+Objects have named indexes to store unordered values. 
+
