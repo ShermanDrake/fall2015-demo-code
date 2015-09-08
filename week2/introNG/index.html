@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-app="myApp" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Untitled</title>
+
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.4/angular.js"></script>
+    </head>
+    <!-- In the mainController inside of the myApp module, there is a $scope variable called greeting. -->
+    <body>
+        <div ng-controller="mainController">
+            <h1 class="{{class}}" ng-click="excite()">{{greeting}}</h1>
+            <h2>{{excitement}}</h2>
+            <!-- movie is a name we made up right here. movies refers to $scope.movies in our controller. -->
+            <div ng-repeat="movie in movies">
+                <h1>{{movie.title}}</h1>
+                <h2>{{movie.genre}}</h2>
+                <h3>{{$index + 1}}
+            </div>            
+        </div>
+        
+        <script src="main.js"></script>
+    </body>
+</html>
