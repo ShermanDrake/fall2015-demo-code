@@ -65,12 +65,39 @@ loop incrementer
 
 for loop body describes what to do on each iteration.
 
-
 Objects - non-primitive type
+
 
 objects consist of unordered key-value pairs.
 
 Arrays have numbered indexes to store ordered values
 
 Objects have named indexes to store unordered values. 
+
+=============================================================
+
+
+Functions
+
+-Set of instructions that does things/stuff
+
+function(){
+	
+}
+
+Functions must be defined AND invoked
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
