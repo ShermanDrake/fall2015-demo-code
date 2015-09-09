@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-app="breakoutModule">
+<head>
+	<title>Angular Stuff</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.5/angular.min.js" type="text/javascript"></script>
+
+	<script src="main.js" type="text/javascript"></script>
+
+</head>
+<body>
+	<div ng-controller="mainController">
+
+		<h1 ng-click="titleClick($event)">Hello There {{userName}}!</h1>
+
+		<div>
+			<p> welcome back to {{appName}}.... </p>
+			<input ng-change="showRhino()" ng-model="appName">
+		</div>
+	</div>
+
+	<div ng-controller="otherController">
+		
+	</div>
+</body>
+</html>

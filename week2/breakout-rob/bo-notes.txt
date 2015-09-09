@@ -1,0 +1,39 @@
+----Rob-----
+Angular
+	High-Level overview
+	Initial Setup(ng-app)
+		differences in where directives go
+	$scope <-> Html
+	Directives
+	Adding / Removing Classes in Angular
+	Events, directives for handling events
+	Expressions {{}}
+
+	Using JS in conjunction with HTML
+		also native ways to interact
+
+	Pre-compilers for javascript
+
+
+----Raphael-----
+Talking through Javascript
+	Syntax
+	Arrays
+	For Loops
+	Nested Loops
+	Common Methods / functions
+	Data structures - Arrays / Objects
+	ex : isNumber
+	Recursive functions
+
+
+
+
+
+
+
+
+
+CSS - when to have it in HTML vs Stylesheet
+
+Capabilities & Limitations of Frameworks / Browsers / JS
