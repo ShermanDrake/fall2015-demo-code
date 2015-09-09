@@ -7,8 +7,3 @@ Talking through Javascript
     Data structures - Arrays / Objects
     ex : isNumber
     Recursive functions
-
-
-ternary operator
-
-When do I use square brackets vs parentheses?
