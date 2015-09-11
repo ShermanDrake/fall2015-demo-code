@@ -1,0 +1,25 @@
+ng-model: provides 2-way data-binding, allowing the user actions in inputs in the view to change values in the model.
+
+ng-class: lets you dynamically set classes on your elements, based on scope variables.
+
+    1: You have a scope variable with a string value, and you want an element to have the class with that name
+
+    2: You have a scope variable with a boolean value. If that value is true, apply a certain class to that element. If the value is false, do not apply that class to the element. 
+
+    3: Both of the above. Use an array full of strings and objects.
+
+ng-show: dynamically hide or reveal an element based on a boolean value.
+
+ng-src/ng-href: dynamically set sources/hrefs for links and images. This prevents the browser from accidentally sending a request to a fake URL.
+
+Event handling
+
+Event object contains additional information about the event
+
+ng-keydown - triggers when a physical button on your keyboard is pressed down
+ng-keyup - triggers when a physical button on your keyboard is released
+
+
+ng-keypress - triggers when a key is pressed that would produce text
+
+ng-submit - triggers when a form is submitted. This directive automatically prevents default form behavior.

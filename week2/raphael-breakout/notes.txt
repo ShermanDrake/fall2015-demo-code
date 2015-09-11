@@ -1,0 +1,9 @@
+Talking through Javascript
+    Syntax
+    Arrays
+    For Loops
+    Nested Loops
+    Common Methods / functions
+    Data structures - Arrays / Objects
+    ex : isNumber
+    Recursive functions

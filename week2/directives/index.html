@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html ng-app="myApp" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Untitled</title>
+
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.4/angular.js"></script>
+    </head>
+    <!-- In the mainController inside of the myApp module, there is a $scope variable called greeting. -->
+    <body ng-controller="mainController" ng-keydown="handleKeydown($event)">
+        <div>
+            <!-- whatever that value of $scope.partyColor is, that's the class that we're applying to this element. -->
+<!--             <h1 style="font-size:{{bigness}}px" ng-class="{big : important}">Welcome to the {{party}}!</h1> -->
+            <h1 ng-click="toggleImportance()" ng-hide="cancel" ng-class="[{big : important}, partyColor]">Welcome to the {{party}}!</h1>
+            <label>Where?</label><input ng-model="party"><br>
+            <label>What color?</label><input ng-model="partyColor"><br>
+            <label>How Important?</label><input type="checkbox" ng-model="important"><br>
+            <!-- <input type="range" ng-model="bigness"> -->
+            <label>Cancel the whole thing</label><input type="checkbox" ng-model="cancel">
+
+            <br>
+            <div class="box" ng-click="clickDiv()">
+                <img ng-click="clickIMG($event)" ng-src="{{imgURL}}">
+            </div>
+            <div ng-click="whichPerson($index)" ng-repeat="person in people">
+                <p>{{person}}</p>
+            </div>
+        </div>
+        
+        <script src="main.js"></script>
+    </body>
+</html>
