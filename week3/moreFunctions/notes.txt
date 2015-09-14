@@ -1,0 +1,12 @@
+boolean true is true, boolean false is false, but all other values can be truthy or falsey
+
+null and undefined are falsey
+0 is falsey
+'' is falsey
+
+
+callback: a function that you define, but you never call yourself. It is called by the system (the browser, the server, etc) when it is needed.
+
+Angular doesn't like setTimeout or setInterval. If you change scope variables in a timeout, angular might not notice the change. Use angular's $timeout and $interval instead.
+
+In javascript, functions are first-class citizens. You can put a function anywhere you would put any other value.
