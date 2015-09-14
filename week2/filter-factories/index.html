@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+	<title>Filter/Factory</title>
+	<script src="angular.js" type="text/javascript"></script>
+
+
+</head>
+<body>
+	<h1> Filters and Factories! </h1>
+
+	<div ng-controller="trollerController">
+		<!-- <h3>{{greeting | excite:amIDepressed}}</h3>
+		<h3>{{awesomeGreeting}}</h3> -->
+
+	<ul>
+		<!-- for book in books -->
+		<li ng-repeat="book in books | orderBy:'author'">
+			<h6>{{book.title | excite}}</h6>
+			<p>{{book.author | excite:true}}</p>
+		</li>
+	</ul>
+
+	</div>
+
+	<div ng-controller="fridayController">
+		<!-- <h3>{{greeting}}</h3> -->
+
+		<!-- <ul>
+			<li ng-repeat="book in books">
+				<h1>{{book.title}}</h1>
+				<p>{{book.author}} - {{book.year}}</p>
+
+			</li>
+		</ul> -->
+
+	</div>
+
+	<script src="main.js" type="text/javascript"></script>
+</body>
+</html>
