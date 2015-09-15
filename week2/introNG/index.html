@@ -10,13 +10,16 @@
     <!-- In the mainController inside of the myApp module, there is a $scope variable called greeting. -->
     <body>
         <div ng-controller="mainController">
+            <input ng-model="search">
             <h1 class="{{class}}" ng-click="excite()">{{greeting}}</h1>
             <h2>{{excitement}}</h2>
             <!-- movie is a name we made up right here. movies refers to $scope.movies in our controller. -->
-            <div ng-repeat="movie in movies">
+            <!-- renderedMovies = movies.filter(onlyTheBest) -->
+            <div ng-repeat="movie in movies | filter : onlyTheBest">
                 <h1>{{movie.title}}</h1>
                 <h2>{{movie.genre}}</h2>
-                <h3>{{$index + 1}}
+                <!-- <h3>{{$index + 1}}</h3> -->
+                <h3>{{movie.rating}}</h3>
             </div>            
         </div>
         

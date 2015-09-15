@@ -17,17 +17,31 @@ var mainControllerFunc = function($scope){
     var citizenKane = {
         title : 'Citizen Kane',
         genre : 'Sled-based Comedic Thriller',
+        rating : 7,
     }
     var silenceOfTheLambs = {
         title : 'Silence of the Lambs',
         genre : 'Musical Cooking Show',
+        rating : 3.1415926535
     }
     var jackAndJill = {
         title : 'Jack and Jill',
         genre : 'Psychological Mystery',
+        rating : 100
     }
+    $scope.search = 'Musical Cooking Show'
     $scope.movies = [citizenKane, silenceOfTheLambs, jackAndJill]
     $scope.class = 'foo'
+
+    $scope.onlyTheBest = function(element){
+        // console.log(element.genre.search($scope.search))
+        if ( element.genre.search($scope.search) !== 0 ) {
+            return false
+        }
+        else { 
+            return true
+        }
+    }
 
 }
 // GET the module, use it to create a controller.

@@ -1,0 +1,22 @@
+Functional programming - a style of programming that relies heavily on functions. 
+
+
+Break a large problem apart into smaller problems.
+Writing COMPOSABLE functions
+
+
+Whenever possible, use PURE functions. PURE functions take input, return output, and have no SIDE EFFECTS.
+
+In functional programming, your data should be IMMUTABLE - cannot be changed. We want to treat our data as STATELESS.
+
+For-loops are statements. There are a lot of limits in javascript on WHERE you can put a statement (not in a function call, not in an if-condition)
+Expressions (like function calls) are much more flexible and composable. They can go almost anywhere.
+
+
+MAP takes an input array, and returns a new array of the same length, with each element transformed in some way.
+'this', 'is', 'a', 'string'
+'THIS', 'IS', 'A', 'STRING'
+
+FILTER takes an input array, and returns a smaller array that is a subset of the input array. Some elements may be filtered out, based on the filter callback function.
+
+REDUCE takes an array as input, and reduces it down to a single value.
