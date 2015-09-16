@@ -1,0 +1,14 @@
+Data-binding in Angular---
+Common directives (ng-repeat (nested ng-repeats), ng-model, ng-class, show-hide)
+Working with $index
+front-end angular search
+Angular Event handling
+
+Injecting HTML into DOM using $scope ( ng-bind-html, ngSanitize)
+Data structure / architecture
+
+
+
+
+
+

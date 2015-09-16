@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html ng-app="humpModule">
+<head>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<title>Angular stuffs</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.5/angular.min.js" type="text/javascript"></script>
+</head>
+<body ng-controller="mindController">
+
+	<h1>Welcome to Angular Stuffs</h1>
+
+	<!-- <h3> {{greeting}} </h3>
+
+	<input ng-blur="changeGreeting()" ng-model="greetingInput", placeholder="Enter a greeting"> -->
+
+
+<!-- 	<div class="user-profile">
+		
+		<h1>{{user.name}}</h1>
+		<p>{{user.tin}}</p>
+		<p>{{user.favoriteAnimal}}</p>
+		<p>{{user.firstCarColor}}</p>
+		<p>{{user.mothersMaidenName}}</p>
+		<p>{{user.highschoolMascot}}</p>
+
+	</div>
+
+	<div class="user-profile-edit">
+
+		<input ng-model="editUser.name", placeholder="Name">
+		<input ng-model="editUser.tin", placeholder="TIN">
+		<input ng-model="editUser.favoriteAnimal", placeholder="Favorite Animal">
+		<input ng-model="editUser.firstCarColor", placeholder="First Car Color">
+		<input ng-model="editUser.mothersMaidenName", placeholder="Mother's Maiden Name">
+		<input ng-model="editUser.highschoolMascot", placeholder="Highschool Mascot">
+
+		<button ng-click="submitProfile()">Submit Profile</button>
+		
+	</div>
+ -->
+
+
+<div id="beach-toys">
+	
+	<div class="beach-toy" ng-class="{ 'selected-toy' : toy.selected }" ng-repeat="(myIndex, toy) in beachToys">
+		<!-- Get Values of keys in object -->
+		<!-- <p ng-repeat="(key, val) in toy">{{key}}</p> -->
+		{{toy.name}} - {{$index}}
+		<ul>
+			<li ng-click="changeBackground($index, myIndex)" ng-repeat="color in toy.colors track by $index">{{color}} - {{$index}}</li>
+		</ul>
+		
+
+	</div> 	
+
+
+</div>
+
+
+
+
+
+
+<script src="main.js" type="text/javascript"></script>
+</body>
+</html>
