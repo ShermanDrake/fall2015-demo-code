@@ -1,0 +1,18 @@
+functions, functions, functions, and more functions
+  - callbacks
+  - closure
+  - reduce/filter/map array method
+functional programming
+moment.js dates / native dates
+Data structure / architecture
+
+word-count problem
+
+
+How to choose map or filter?
+
+Are my inputs and outputs both arrays?
+
+Does the output array have the same number of elements as the input array?  Can you transform each individual array element by looking only at that element (not looking at its neighbors, or its index in the array)? Then use map!
+
+Does the output have the same number of elements, or fewer, than the input? Is the output array a SUBSET of the input (the input should have all the elements that the output has)? Can we know if an individual element belongs in the output by only looking at that individual element, without respect to its neighbors or its index in the array? Use filter!
