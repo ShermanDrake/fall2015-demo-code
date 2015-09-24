@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html ng-app="radApp">
+<head>
+	<title>Breakin Angular</title>
+
+	<link rel="stylesheet" type="text/css" href="main.css">
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.5/angular.js" type="text/javascript"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.5/angular-animate.js" type="text/javascript"></script>
+
+	<script src="main.js" type="text/javascript"></script>
+</head>
+<body ng-controller="radTroller">
+
+	<div ng-if="bool" class="fade">
+  		Fade me in out
+	</div>
+	<button ng-click="bool=true">Fade In!</button>
+	<button ng-click="bool=false">Fade Out!</button>
+
+
+	<ul>
+		<li ng-if="beer.showBeer" class="beer-item fade" ng-repeat="(beerIndex, beer) in beers">
+			<h1>{{beer.name}}</h1>
+			<h5>{{beer.style}}</h5>
+			<p>{{beer.IBU}}IBU - {{beer.ABV}}%</p>
+
+			<p>Hops :</p>
+			<ul>
+				<!-- <li ng-repeat="hop in beer.hops track by $index" ng-click="deleteHop(beerIndex, $index, 1)"> -->
+				<li ng-repeat="hop in beer.hops track by $index">
+					{{hop}} - {{$index}} - {{beerIndex}}
+					<input ng-show="beer.showHopInputs" ng-model="hop">
+				</li>
+
+			
+			</ul>
+			<button ng-click="editHops($index)">Edit Hops - {{$index}}</button>
+
+			<p> Grains:</p>
+			<ul>
+				<li ng-repeat="grain in beer.grains">{{grain}}</li>
+			</ul>
+			<button ng-click="editGrains($index)">Edit Grains</button>
+
+
+		</li>
+
+	</ul>
+
+</body>
+</html>

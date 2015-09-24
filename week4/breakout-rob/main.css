@@ -1,0 +1,30 @@
+h1,h2,h3,h4,h5,h6,p {
+	margin:0;
+}
+
+.beer-item {
+	margin-bottom: 20px;
+}
+
+
+
+/* The starting CSS styles for the enter animation */
+.fade.ng-enter {
+  transition:5s linear all;
+  background-color:black;
+}
+
+/* The finishing CSS styles for the enter animation */
+.fade.ng-enter.ng-enter-active {
+  background-color:white;
+  /*opacity:1;*/
+}
+
+.fade.ng-leave {
+  transition:5s linear all;
+  background-color:white;
+}
+.fade.ng-leave.ng-leave-active {
+  background-color:black;
+  
+}

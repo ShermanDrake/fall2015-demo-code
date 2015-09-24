@@ -1,0 +1,5 @@
+Object oriented programming + angular
+data binding in angular, data modeling, particularly using empty strings.
+nested ng-repeat, trackby index
+ng-animate
+drag 'n' drop
