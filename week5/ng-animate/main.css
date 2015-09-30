@@ -1,0 +1,59 @@
+h3 {
+	font-size:inherit;
+}
+.noodle {
+
+	position: relative;
+	font-size:24px;
+	left: 0%;
+	color:black;
+	transition: all 2s ease;
+	height:100px;
+}
+
+/*.noodle.ng-hide {
+	left: 100%;
+	color:red;
+}*/
+
+/*.noodle.ng-hide {
+	left: 100%;
+	color:red;
+}
+
+*/
+
+.noodle.ng-enter,
+.noodle.ng-move,
+.noodle.ng-leave {
+	transition: all 2s ease;
+}
+
+.noodle.ng-leave.ng-leave-active,
+.noodle.ng-move,
+.noodle.ng-enter {
+  /*font-size:100px;
+  left:100%;*/
+  height:0px;
+}
+
+.noodle.ng-leave,
+.noodle.ng-move.ng-move-active,
+.noodle.ng-enter.ng-enter-active {
+  /*font-size:24px;
+  left:0%;*/
+  height:100px;
+}
+
+body{
+	/*background-image:url(https://images.rapgenius.com/0b56971418271d3fa5e41160a2687bb7.500x350x4.gif);*/
+	background-size:cover;
+}
+
+
+
+
+
+.noodle.ng-enter.ng-enter-active {
+	color:red;
+}
