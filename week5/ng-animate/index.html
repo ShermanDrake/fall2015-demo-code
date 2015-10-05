@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>NG ANIMATE</title>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.css">
+
+	<link rel="stylesheet" type="text/css" href="main.css">
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.5/angular.min.js" type="text/javascript"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.5/angular-animate.js" type="text/javascript"></script>
+
+	<script src="main.js" type="text/javascript"></script>
+
+
+</head>
+<body ng-app="Animodule">
+
+	<div ng-controller="controllimations">
+		
+		<div class="container-fluid">
+			
+			<div class="row">
+
+				<!-- <div ng-repeat="noodle in noodles" class="col-xs-6 noodle" ng-show="noodle.byebye"> -->
+
+
+				<div ng-repeat="noodle in noodles" class="col-xs-6 noodle">
+					<h3 ng-click="byeByeNoodle($index)">{{noodle.type}}</h3>
+				</div>
+
+
+			
+			</div>
+
+		</div>
+		<button ng-click="instantNoodles()" class="btn btn-info">Instant Noodles</button>
+	</div>
+
+
+
+
+</body>
+</html>
