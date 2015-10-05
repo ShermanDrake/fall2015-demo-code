@@ -1,0 +1,16 @@
+What happens when you type http://google.com into your URL bar in your browser?
+
+first, we know we're using http, so we will send an http request to whatever server we're sending requests to.
+
+DNS - domain name server
+We reach out to the DNS, say we're looking for google.com, and the DNS server tells us the I.P. address where we can find it.
+
+More specifically, we send the request to port 80 on google's server.
+
+The servers at google will read our request.
+
+Google server reads our request, determines who we are, what we want, etc. The server puts together a response packet to satisfy our request. In this case, the response is full of HTML.
+
+All external resources that are linked in the HTML (stylesheets, javascript, images, etc) must be fetched with separate requests.
+
+
