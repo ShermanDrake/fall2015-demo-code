@@ -1,0 +1,9 @@
+on a free-standing function, 'this' refers to the window.
+
+On a function that is attached to an object (i.e. a method) this refers to the host object. 
+
+In javascript, functions are objects, so they can have their own methods. 3 examples: call, apply, and bind.
+
+Call and apply call the original function, and return whatever value that function returns. 
+
+Bind returns a NEW function, with its 'this' context permanently bound.

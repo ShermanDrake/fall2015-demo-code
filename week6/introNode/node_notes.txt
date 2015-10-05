@@ -1,0 +1,49 @@
+What is node.js?
+    A javascript runtime environment
+
+How is node.js different from browser js?
+
+    NO window
+    NO DOM
+
+    modules
+    file system access
+    networking access
+    hardware access
+
+    web server
+
+
+running a script is kind of like running a function, in that the script itself can have arguments
+
+access command-line arguments with process.argv
+argv is short for 'arguments vector'
+process.argv[0] is ALWAYS 'node' ( or a filepath to node )
+process.argv[1] is the script that is being run currently
+process.argv[2+] is what you would naturally think of as the arguments to the script
+
+use `module.exports` and `require()` to share code between files. Whatever is exported in one file can be required in another. 
+require returns the value of module.exports
+
+fs is a core module, so you can require it by name. You don't need to specify a file-path.
+
+
+`npm install <package-name>` adds that module to your node_modules folder
+the flag `--save` causes npm to record the module name and version number to your package.json.
+When requiring installed modules, you don't need to use a filepath. Node expects to look for modules in your node_modules folder
+
+typing `npm install` with no other arguments will read the package.json file, and download all the modules that are specified as dependencies.
+
+any files and folders in a .gitignore file will not be added or committed in git. This is a great way to not share bulky node_modules, or secret API keys.
+
+Ubuntu 10.12
+
+Semantic versioning
+major.minor.patch
+fail.feature.fix
+
+patch/fix: fixes a bug, but doesn't change how the module is used
+
+minor/feature: a new feature was added to the module, but old code using the module should still work the same way.
+
+major/fail: breaking changes. Old code might not work with the new version.

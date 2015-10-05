@@ -1,0 +1,28 @@
+What is node.js?
+    A javascript runtime environment
+
+How is node.js different from browser js?
+
+    NO window
+    NO DOM
+
+    modules
+    file system access
+    networking access
+    hardware access
+
+    web server
+
+
+running a script is kind of like running a function, in that the script itself can have arguments
+
+access command-line arguments with process.argv
+argv is short for 'arguments vector'
+process.argv[0] is ALWAYS 'node' ( or a filepath to node )
+process.argv[1] is the script that is being run currently
+process.argv[2+] is what you would naturally think of as the arguments to the script
+
+use `module.exports` and `require()` to share code between files. Whatever is exported in one file can be required in another. 
+require returns the value of module.exports
+
+fs is a core module, so you can require it by name. You don't need to specify a file-path.
