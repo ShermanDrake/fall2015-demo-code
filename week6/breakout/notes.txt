@@ -1,0 +1,16 @@
+Using Express to serve an Angular app - Ro
+
+Sending/Receiving JSON data in Angular ($http) -Ro
+(sending image name to server to serve image back)
+
+Dynamic Routing -Ro
+
+next in routes -> middleware -Ra
+
+Error Handling -> 404's and such -Ra
+
+HTTP requests ($http clientside, request module serverside)
+
+Asynchronous code / callbacks
+Deep into JSON
+Deep into Debugging Node -> CHECK YO F`N TERMINAL
