@@ -35,6 +35,7 @@ app.post('/formsubmit', function(req, res){
   res.redirect('/users/' + req.body.username + '/' + req.body.password)
 })
 
+/users/foo/bar
 app.get('/users/:username/:password', function(req, res){
   res.send('Welcome back, ' + req.params.username + '. \n Your password is : ' + req.params.password)
 })

@@ -1,0 +1,26 @@
+<html ng-app="breakoutApp">
+<head>
+    <title> Big Breakout</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.5/angular.min.js"></script>        
+</head>
+    
+    <body ng-controller="breakoutController">
+        <h1>{{greeting}}</h1>
+
+
+        <form action="/submit" method="GET">
+            <input name="tin" placeholder="TIN">
+            <input name="nodemon" placeholder="Favorite Nodemon">
+            <input name="birthWeight" placeholder="Weight at Birth">
+            <input name="favoriteConditioner" placeholder="Favorite Conditioner">
+
+            <input type="submit">
+        </form>
+
+
+
+
+        <script src="/js/main.js"></script>
+    </body>
+</html>
